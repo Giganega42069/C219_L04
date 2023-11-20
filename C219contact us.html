@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="C219style2.css">
+</head>
+
+<body>
+    <video autoplay loop muted plays-inline class="back-video">
+        <source src="images/BlueOcean.mp4" type="video/mp4">
+    </video>
+    <div class="mommy">
+        <div class="container" id="home">
+            <header class="header">
+                <a href="index.html" class="logo"><img src="images/New Logo.svg" alt="mars" height="100px"
+                        width="100px"></a>
+                <nav class="navbar">
+                    <a href="C219index.html">Home</a>
+                    <a href="#">Rediscover Singapore</a>
+                    <a href="C219cruises.html">Cruises</a>
+                    <div class="dropdown">
+                        <a href="#" class="dropbtn">Package Tours</a>
+                        <div class="dropdown-content">
+                            <a href="#">Tour 1</a>
+                            <a href="#">Tour 2</a>
+                            <a href="#">Tour 3</a>
+                        </div>
+                    </div>
+                    <a href="C219contact us.html">Contact Us</a>
+                </nav>
+            </header>
+
+            <div class="menu-icon" onclick="toggleMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <!-- Navigation menu for smaller screens -->
+            <nav class="mobile-menu">
+                <a href="index.html">Home</a>
+                <a href="#">Rediscover Singapore</a>
+                <a href="cruises.html">Cruises</a>
+                <div class="dropdown">
+                    <a href="#" class="dropbtn">Package Tours</a>
+                    <div class="dropdown-content">
+                        <a href="#">Tour 1</a>
+                        <a href="#">Tour 2</a>
+                        <a href="#">Tour 3</a>
+                    </div>
+                </div>
+                <a href="contact us.html">Contact Us</a>
+            </nav>
+
+            <section class="contact-section" id="contact">
+                <div class="contact-form">
+                    <h2>Contact Us</h2>
+                    <form action="#" method="POST">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone">
+
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+
+                        <button type="submit" class="submit-button">Submit</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+
+    <!-- Footer section -->
+    <footer>
+        <p>© 2023 Your Company. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            // Toggle the 'menu-open' class on the body
+            document.body.classList.toggle('menu-open');
+        }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;400;700&display=swap"
+        rel="stylesheet">
+</body>
+
+</html>

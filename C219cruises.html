@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cruises</title>
+    <link rel="stylesheet" href="C219style3.css">
+</head>
+
+<body>
+    <div class="mommy">
+        <div class="container" id="home">
+            <header class="header">
+                <a href="index.html" class="logo"><img src="images/New Logo.svg" alt="mars" height="100px"
+                        width="100px"></a>
+                <nav class="navbar">
+                    <a href="C219index.html">Home</a>
+                    <a href="#">Rediscover Singapore</a>
+                    <a href="C219cruises.html">Cruises</a>
+                    <div class="dropdown">
+                        <a href="#" class="dropbtn">Package Tours</a>
+                        <div class="dropdown-content">
+                            <a href="#">Tour 1</a>
+                            <a href="#">Tour 2</a>
+                            <a href="#">Tour 3</a>
+                        </div>
+                    </div>
+                    <a href="C219contact us.html">Contact Us</a>
+                </nav>
+
+            </header>
+
+            <div class="menu-icon" onclick="toggleMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <!-- Navigation menu for smaller screens -->
+            <nav class="mobile-menu">
+                <a href="C219index.html">Home</a>
+                <a href="#">Rediscover Singapore</a>
+                <a href="C219cruises.html">Cruises</a>
+                <div class="dropdown">
+                    <a href="#" class="dropbtn">Package Tours</a>
+                    <div class="dropdown-content">
+                        <a href="#">Tour 1</a>
+                        <a href="#">Tour 2</a>
+                        <a href="#">Tour 3</a>
+                    </div>
+                </div>
+                <a href="C219contact us.html">Contact Us</a>
+            </nav>
+
+        </div>
+
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="images/BlueOcean.mp4" type="video/mp4">
+        </video>
+
+        <div class="content">
+            <h1>Cruises</h1>
+            <a onclick="scrollToDiv('article');">Start Cruising</a>
+        </div>
+    </div>
+
+    <section class="articles" id="article">
+
+        <div class="article-heading">
+            <span>The state of the art</span>
+            <h3>Cruises</h3>
+        </div>
+
+        <div class="article-container">
+
+            <div class="article-box">
+
+                <div class="article-img">
+                    <img src="images/cruise1.jpg" alt="fuji">
+                </div>
+
+                <div class="article-text">
+                    <span>Lalaby Baby</span>
+                    <div class="article-description">
+                        known for its size this ship has been carrying scaredy cats for its whole entire life
+                    </div>
+                </div>
+            </div>
+
+            <div class="article-box">
+
+                <div class="article-img">
+                    <img src="images/cruise2.jpg" alt="fuji">
+                </div>
+
+                <div class="article-text">
+                    <span>Daimayo</span>
+                    <div class="article-description">
+                        the big boy the pinnacle of death. One hit from an iceberg and we go bye bye
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2023 Your Company. All rights reserved.</p>
+    </footer>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;400;700&display=swap"
+        rel="stylesheet">
+
+    <script>
+        function scrollToDiv(targetId) {
+            var element = document.getElementById(targetId);
+            element.scrollIntoView({ behavior: "smooth" });
+        }
+
+        function toggleMenu() {
+            // Toggle the 'menu-open' class on the body
+            document.body.classList.toggle('menu-open');
+        }
+    </script>
+</body>
+
+</html>
